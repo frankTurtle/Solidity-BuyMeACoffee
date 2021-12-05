@@ -1,0 +1,20 @@
+{
+  "name": "solidity-buymeacoffee",
+  "version": "1.0.0",
+  "description": "'Buy me a coffee' tipper for web3",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/frankTurtle/Solidity-BuyMeACoffee.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/frankTurtle/Solidity-BuyMeACoffee/issues"
+  },
+  "homepage": "https://github.com/frankTurtle/Solidity-BuyMeACoffee#readme"
+}
