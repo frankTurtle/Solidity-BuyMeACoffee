@@ -1,4 +1,4 @@
-// SPDX-License-Identifier: MIT
+// SPDX-License-Identifier: UNLICENSED
 
 pragma solidity ^0.8.0;
 
@@ -7,6 +7,9 @@ contract CoffeePortal {
 
     address payable public owner; 
 
+    /*
+     * A little magic, Google what events are in Solidity!
+     */
     event NewCoffee(
         address indexed from,
         uint256 timestamp,
@@ -15,10 +18,15 @@ contract CoffeePortal {
     );
 
     constructor() payable {
+
         // user who is calling this function address
         owner = payable(msg.sender);
     }
 
+    /*
+     * I created a struct here named Coffee.
+     * A struct is basically a custom datatype where we can customize what we want to hold inside it.
+     */
     struct Coffee {
         address giver; // The address of the user who buys me a coffee.
         string message; // The message the user sent.
@@ -42,6 +50,8 @@ contract CoffeePortal {
 
     // Get All coffee bought
     function getTotalCoffee() public view returns (uint256) {
+        // Optional: Add this line if you want to see the contract print the value!
+        // We'll also print it over in run.js as well.
         return totalCoffee;
     }
 
